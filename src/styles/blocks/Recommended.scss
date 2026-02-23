@@ -17,6 +17,11 @@
   &__card {
     max-width: 324px;
     width: 100%;
+    transition: scale 0.3s ease;
+
+    &:hover {
+      scale: 1.05;
+    }
 
     @media (max-width: 1260px) {
       max-width: 100%;

@@ -53,8 +53,11 @@
     transition: all 0.3s ease;
 
     &:hover {
-      opacity: 0.9;
-      scale: 1.03;
+      background-color: $color-black;
+    }
+
+    &:focus {
+      background-color: $color-dark;
     }
 
     @media (max-width: 1260px) {
