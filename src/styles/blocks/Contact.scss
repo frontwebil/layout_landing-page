@@ -28,12 +28,22 @@
   }
   &__input {
     background-color: #f9f9f9;
+    border: 1px solid transparent;
     width: 100%;
-    padding: 14px 16px;
+    padding: 13px 15px;
     border-radius: 8px;
+    transition: 0.3s ease all;
 
     &::placeholder {
       color: #7e7e83;
+    }
+
+    &:hover {
+      border: 1px solid #dbdbdb;
+    }
+
+    &:focus {
+      border: 1px solid $color-orange;
     }
   }
   &__form-button {
@@ -41,7 +51,7 @@
     font-weight: 700;
     cursor: pointer;
     margin-top: 16px;
-    background-color: $color-black;
+    background-color: $color-orange;
     color: $color-white;
     width: 100%;
     padding: 14px;
@@ -49,8 +59,11 @@
     transition: all 0.3s ease;
 
     &:hover {
-      opacity: 0.8;
-      scale: 1.05;
+      background-color: $color-black;
+    }
+
+    &:focus {
+      background-color: $color-dark;
     }
   }
 

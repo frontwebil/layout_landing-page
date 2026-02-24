@@ -1,10 +1,13 @@
 /* eslint-disable prettier/prettier */
 'use strict';
 
+console.log('script works');
+
 const burgerMenu = document.querySelector('.burger');
 const burgerButtonOpen = document.querySelector(
   '.header__buttons-burger-button',
 );
+
 const burgerButtonClose = document.querySelector(
   '.header__buttons-burger-button-open',
 );
