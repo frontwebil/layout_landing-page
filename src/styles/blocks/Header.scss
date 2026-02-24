@@ -38,6 +38,12 @@
       transition: all 0.3s ease;
     }
 
+    @media (max-width: 744px) {
+      &::before {
+        display: none;
+      }
+    }
+
     &:hover::before {
       opacity: 1;
       visibility: visible;

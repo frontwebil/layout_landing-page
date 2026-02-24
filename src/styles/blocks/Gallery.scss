@@ -13,9 +13,16 @@
   &__category-images {
     display: flex;
     gap: 24px;
+
+    @media (max-width: 744px) {
+      gap: 20px;
+    }
   }
   &__category-image {
     width: 100%;
+    @media (max-width: 744px) {
+      aspect-ratio: 1 / 1;
+    }
     display: block;
     transition: scale 0.3s ease;
 
